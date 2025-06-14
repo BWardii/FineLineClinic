@@ -6,7 +6,7 @@ import { useRef } from 'react'
 
 const Map = () => {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, threshold: 0.2 })
+  const isInView = useInView(ref, { once: true })
 
   return (
     <section ref={ref} className="section-padding bg-white">

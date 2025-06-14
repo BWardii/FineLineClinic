@@ -7,7 +7,7 @@ import { Heart, Shield, Award } from 'lucide-react'
 
 const Mission = () => {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, threshold: 0.2 })
+  const isInView = useInView(ref, { once: true })
 
   const values = [
     {

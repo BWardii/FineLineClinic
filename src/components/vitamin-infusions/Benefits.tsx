@@ -7,7 +7,7 @@ import { Zap, Shield, Sparkles, Heart, Brain, Droplets, Clock, Award } from 'luc
 
 const Benefits = () => {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, threshold: 0.2 })
+  const isInView = useInView(ref, { once: true })
 
   const benefits = [
     {
