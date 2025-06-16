@@ -60,7 +60,7 @@ export default function Slideshow({ slides, interval = 6000, children }: Slidesh
             sizes="(max-width: 768px) 100vw, 100vw"
             quality={90}
             style={{ 
-              filter: 'brightness(0.85)'
+              filter: 'brightness(0.95)'
             }}
           />
         </div>
@@ -70,7 +70,9 @@ export default function Slideshow({ slides, interval = 6000, children }: Slidesh
         {children}
       </div>
       {/* Gradient overlay for readability */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent z-10" aria-hidden />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60 z-10" aria-hidden />
+      {/* Additional overlay for better contrast */}
+      <div className="absolute inset-0 bg-black/20 z-10" aria-hidden />
       {/* Navigation dots */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-30">
         {slides.map((_, idx) => (
