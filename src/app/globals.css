@@ -58,6 +58,14 @@
   .text-shadow-xl {
     text-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
   }
+  
+  .text-shadow-2xl {
+    text-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  }
+  
+  .text-shadow-3xl {
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+  }
 }
 
 /* Custom scrollbar */
