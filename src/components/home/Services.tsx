@@ -17,7 +17,7 @@ const Services = () => {
       description: 'Replenish and revitalize your body with our premium vitamin infusions for energy, immunity, and beauty.',
       features: ['Energy Boost', 'Immune Support', 'Beauty Enhancement', 'Detoxification'],
       price: 'From £99',
-      image: '/images/1000163192.jpg',
+      image: '/images/Vitamin-IV-infusions-for-general-wellbeing-in-Solihull.jpg',
       href: '/vitamin-infusions',
       color: 'from-blue-500 to-cyan-500'
     },
@@ -37,7 +37,7 @@ const Services = () => {
       description: 'Cutting-edge procedures to rejuvenate, tighten, and perfect your skin texture and tone.',
       features: ['Microneedling', 'Chemical Peels', 'Polynucleotides', 'Profhilo'],
       price: 'From £150',
-      image: 'https://images.unsplash.com/photo-1616391182219-e080b5389863?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+      image: '/images/dermapen-microneedling-closeup-light-skin.jpg',
       href: '/services',
       color: 'from-gold-500 to-yellow-600'
     }
