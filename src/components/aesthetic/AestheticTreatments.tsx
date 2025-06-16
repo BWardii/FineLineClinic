@@ -88,45 +88,45 @@ const AestheticTreatments = () => {
   return (
     <section id="treatments" ref={ref} className="section-padding bg-gradient-to-b from-white to-sage-50/30">
       <div className="container mx-auto">
-        {/* Header */}
+        {/* Header - Mobile Optimized */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16"
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-gold-100 to-gold-200 px-6 py-3 rounded-full mb-6"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-gold-100 to-gold-200 px-4 py-2 sm:px-6 sm:py-3 rounded-full mb-4 sm:mb-6"
           >
-            <Sparkles className="w-5 h-5 text-gold-600" />
-            <span className="text-gold-700 font-medium">Aesthetic Treatments</span>
+            <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-gold-600" />
+            <span className="text-gold-700 font-medium text-sm sm:text-base">Aesthetic Treatments</span>
           </motion.div>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
             Advanced <span className="text-gold-600">Beauty Solutions</span>
           </h2>
           
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
             Transform your appearance with our comprehensive range of aesthetic treatments. 
             Each procedure is performed by experienced practitioners using the latest techniques and premium products.
           </p>
         </motion.div>
 
-        {/* Treatments Grid */}
-        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+        {/* Treatments Grid - Mobile Optimized */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
           {aestheticTreatments.map((treatment, index) => (
             <motion.div
               key={treatment.name}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-gold-200 hover:-translate-y-2"
+              className="group bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg hover:shadow-xl sm:hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-gold-200 hover:-translate-y-1 sm:hover:-translate-y-2 touch-manipulation"
             >
-              {/* Image */}
-              <div className="relative h-64 overflow-hidden">
+              {/* Image - Mobile Optimized */}
+              <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                 <img
                   src={treatment.image}
                   alt={treatment.name}
@@ -135,106 +135,103 @@ const AestheticTreatments = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 
-                {/* Icon */}
-                <div className={`absolute top-4 right-4 w-12 h-12 bg-gradient-to-br ${treatment.color} rounded-xl flex items-center justify-center shadow-lg`}>
-                  <treatment.icon className="w-6 h-6 text-white" />
+                {/* Icon - Mobile Optimized */}
+                <div className={`absolute top-3 right-3 sm:top-4 sm:right-4 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br ${treatment.color} rounded-lg sm:rounded-xl flex items-center justify-center shadow-lg`}>
+                  <treatment.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
                 
-                {/* Price */}
-                <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full">
-                  <span className="font-bold text-gold-600">{treatment.price}</span>
+                {/* Price - Mobile Optimized */}
+                <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-full">
+                  <span className="font-bold text-gold-600 text-sm sm:text-base">{treatment.price}</span>
                 </div>
               </div>
 
-              {/* Content */}
-              <div className="p-8">
-                <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-2xl font-bold text-gray-900 group-hover:text-gold-600 transition-colors">
+              {/* Content - Mobile Optimized */}
+              <div className="p-4 sm:p-6 lg:p-8">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3 sm:mb-4 gap-2">
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 group-hover:text-gold-600 transition-colors">
                     {treatment.name}
                   </h3>
-                  <div className="flex items-center gap-2 text-sm text-gray-500">
-                    <Clock className="w-4 h-4" />
+                  <div className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm text-gray-500">
+                    <Clock className="w-3 h-3 sm:w-4 sm:h-4" />
                     {treatment.duration}
                   </div>
                 </div>
                 
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-gray-600 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
                   {treatment.description}
                 </p>
 
-                {/* Benefits */}
-                <div className="mb-6">
-                  <h4 className="font-semibold text-gray-800 mb-3">Key Benefits:</h4>
-                  <div className="grid grid-cols-2 gap-2">
+                {/* Benefits - Mobile Optimized */}
+                <div className="mb-4 sm:mb-6">
+                  <h4 className="font-semibold text-gray-800 mb-2 sm:mb-3 text-sm sm:text-base">Key Benefits:</h4>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-2">
                     {treatment.benefits.map((benefit, idx) => (
-                      <div key={idx} className="flex items-center gap-2 text-sm text-gray-600">
-                        <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${treatment.color}`}></div>
+                      <div key={idx} className="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
+                        <div className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-gradient-to-r ${treatment.color} flex-shrink-0`}></div>
                         {benefit}
                       </div>
                     ))}
                   </div>
                 </div>
 
-                {/* Treatment Areas */}
-                <div className="mb-6">
-                  <h4 className="font-semibold text-gray-800 mb-3">Treatment Areas:</h4>
-                  <div className="flex flex-wrap gap-2">
+                {/* Treatment Areas - Mobile Optimized */}
+                <div className="mb-4 sm:mb-6">
+                  <h4 className="font-semibold text-gray-800 mb-2 sm:mb-3 text-sm sm:text-base">Treatment Areas:</h4>
+                  <div className="flex flex-wrap gap-1 sm:gap-2">
                     {treatment.areas.map((area, idx) => (
-                      <span key={idx} className="bg-gold-50 text-gold-700 px-3 py-1 rounded-full text-sm">
+                      <span key={idx} className="bg-gold-50 text-gold-700 px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm">
                         {area}
                       </span>
                     ))}
                   </div>
                 </div>
 
-                {/* Results */}
-                <div className="mb-6 p-4 bg-sage-50 rounded-xl">
-                  <h4 className="font-semibold text-sage-800 mb-2">Expected Results:</h4>
-                  <p className="text-sage-700 text-sm">{treatment.results}</p>
+                {/* Results - Mobile Optimized */}
+                <div className="mb-4 sm:mb-6 p-3 sm:p-4 bg-sage-50 rounded-lg sm:rounded-xl">
+                  <h4 className="font-semibold text-sage-800 mb-1 sm:mb-2 text-sm sm:text-base">Expected Results:</h4>
+                  <p className="text-sage-700 text-xs sm:text-sm">{treatment.results}</p>
                 </div>
 
+                {/* Action Button - Mobile Optimized */}
                 <Link
                   href="/booking"
-                  className="inline-flex items-center gap-2 text-gold-600 hover:text-gold-700 font-semibold group-hover:gap-3 transition-all duration-300"
+                  className="inline-flex items-center justify-center gap-2 w-full sm:w-auto text-gold-600 hover:text-gold-700 font-semibold group-hover:gap-3 transition-all duration-300 bg-gold-50 hover:bg-gold-100 px-4 py-3 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl text-sm sm:text-base touch-manipulation"
                 >
                   Book Treatment
-                  <ArrowRight className="w-4 h-4" />
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
                 </Link>
               </div>
             </motion.div>
           ))}
         </div>
 
-        {/* CTA Section */}
+        {/* Call to Action - Mobile Optimized */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="text-center"
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="text-center bg-gradient-to-r from-gold-50 to-sage-50 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12"
         >
-          <div className="bg-gradient-to-r from-sage-600 to-gold-600 rounded-3xl p-12 text-white">
-            <h3 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Enhance Your Natural Beauty?
-            </h3>
-            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Book a complimentary consultation to discuss your aesthetic goals and create a personalised treatment plan.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/booking"
-                className="bg-white text-sage-600 px-8 py-4 rounded-2xl font-semibold hover:bg-sage-50 transition-colors duration-300 inline-flex items-center justify-center gap-2"
-              >
-                Book Free Consultation
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-              <Link
-                href="/contact"
-                className="border-2 border-white text-white px-8 py-4 rounded-2xl font-semibold hover:bg-white hover:text-sage-600 transition-all duration-300 inline-flex items-center justify-center gap-2"
-              >
-                Ask Questions
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-            </div>
+          <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
+            Ready to Begin Your Transformation?
+          </h3>
+          <p className="text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto text-sm sm:text-base">
+            Book a complimentary consultation to discuss your aesthetic goals and create a personalised treatment plan.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <Link
+              href="/booking"
+              className="bg-gold-600 hover:bg-gold-700 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg sm:rounded-xl font-semibold transition-colors duration-300 text-sm sm:text-base touch-manipulation"
+            >
+              Book Free Consultation
+            </Link>
+            <Link
+              href="/contact"
+              className="bg-white hover:bg-gray-50 text-gold-600 px-6 py-3 sm:px-8 sm:py-4 rounded-lg sm:rounded-xl font-semibold border border-gold-200 transition-colors duration-300 text-sm sm:text-base touch-manipulation"
+            >
+              Ask Questions
+            </Link>
           </div>
         </motion.div>
       </div>
