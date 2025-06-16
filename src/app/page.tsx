@@ -48,8 +48,8 @@ export default function Home() {
       <Slideshow slides={slides}>
         <HeroOverlay />
       </Slideshow>
-      <WhyChooseUs />
       <Services />
+      <WhyChooseUs />
       <BeforeAfter />
       <About />
       <Stats />
