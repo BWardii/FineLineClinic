@@ -36,7 +36,8 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: ['123 Beauty Lane', 'Aesthetic District', 'City, State 12345'],
+      details: ['Rachel House', '214-218 High Road', 'London, N15 4NP'],
+      action: 'Get Directions'
     },
     {
       icon: Phone,

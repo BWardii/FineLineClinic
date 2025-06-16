@@ -37,7 +37,7 @@ const Services = () => {
       description: 'Cutting-edge procedures to rejuvenate, tighten, and perfect your skin texture and tone.',
       features: ['Microneedling', 'Chemical Peels', 'Polynucleotides', 'Profhilo'],
       price: 'From £150',
-      image: 'https://images.unsplash.com/photo-1616391182219-e080b5389863?auto=format&fit=crop&w=500&q=80',
+      image: 'https://images.unsplash.com/photo-1616391182219-e080b5389863?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
       href: '/services',
       color: 'from-gold-500 to-yellow-600'
     }
@@ -89,6 +89,10 @@ const Services = () => {
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                  onError={(e) => {
+                    e.currentTarget.src = 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=500&q=80'
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 

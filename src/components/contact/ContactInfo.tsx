@@ -14,10 +14,10 @@ const ContactInfo = () => {
     {
       icon: MapPin,
       title: 'Visit Our Clinic',
-      info: '123 Beauty Lane, Suite 200',
-      subInfo: 'Downtown City, ST 12345',
+      info: 'Rachel House, 214-218 High Road, N15 4NP',
+      subInfo: 'London, United Kingdom',
       action: 'Get Directions',
-      href: 'https://maps.google.com',
+      href: 'https://maps.google.com/?q=Rachel+House+214-218+High+Road+N15+4NP',
     },
     {
       icon: Phone,

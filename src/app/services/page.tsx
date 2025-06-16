@@ -3,7 +3,6 @@ import Footer from '@/components/layout/Footer'
 import ServicesHero from '@/components/services/ServicesHero'
 import ServicesList from '@/components/services/ServicesList'
 import ServiceProcess from '@/components/services/ServiceProcess'
-import Pricing from '@/components/services/Pricing'
 import FAQ from '@/components/services/FAQ'
 
 export const metadata = {
@@ -18,7 +17,6 @@ export default function ServicesPage() {
       <ServicesHero />
       <ServicesList />
       <ServiceProcess />
-      <Pricing />
       <FAQ />
       <Footer />
     </main>

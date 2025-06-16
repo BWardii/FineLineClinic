@@ -1,0 +1,36 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circular text path for "FINELINE CLINIC" -->
+  <defs>
+    <path id="circle-path" d="M 60,60 m -45,0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0"/>
+  </defs>
+  
+  <!-- Main circular text -->
+  <text font-family="Arial, sans-serif" font-size="11" font-weight="400" letter-spacing="2" fill="#4a5568">
+    <textPath href="#circle-path" startOffset="0%">
+      FINELINE CLINIC
+    </textPath>
+  </text>
+  
+  <!-- Central face illustration -->
+  <g transform="translate(60,60)" stroke="#4a5568" stroke-width="2" fill="none">
+    <!-- Face profile outline -->
+    <path d="M -15,-20 Q -20,-15 -20,0 Q -20,15 -10,20 Q 0,22 10,20 Q 15,15 15,5 Q 12,-5 5,-15 Q 0,-20 -15,-20" />
+    
+    <!-- Lips -->
+    <path d="M -8,8 Q -5,12 0,10 Q 5,12 8,8" stroke-width="1.5"/>
+    
+    <!-- Nose suggestion -->
+    <path d="M -2,2 Q 0,4 2,2" stroke-width="1"/>
+    
+    <!-- Neck/collar area -->
+    <path d="M -8,18 Q 0,25 8,18" stroke-width="1.5"/>
+    
+    <!-- Small decorative element at bottom -->
+    <circle cx="0" cy="22" r="2" stroke-width="1"/>
+  </g>
+  
+  <!-- Bottom text "Wellness & Aesthetics" -->
+  <text x="60" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="300" letter-spacing="1" fill="#6b7280">
+    Wellness &amp; Aesthetics
+  </text>
+</svg> 

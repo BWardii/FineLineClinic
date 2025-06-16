@@ -99,7 +99,7 @@ const CTA = () => {
               ✨ Complimentary consultations • Flexible payment options • Same-day appointments available
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-sage-200">
-              <span>📍 123 Beauty Lane, Downtown</span>
+              <span>📍 Rachel House, 214-218 High Road, N15 4NP</span>
               <span>🕒 Mon-Sat: 9AM-7PM</span>
               <span>📧 info@finelineclinic.com</span>
             </div>

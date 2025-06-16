@@ -64,7 +64,7 @@ const ContactHero = () => {
             {[
               { icon: Phone, title: 'Call Us', info: '(123) 456-7890' },
               { icon: Mail, title: 'Email Us', info: 'info@finelineclinic.com' },
-              { icon: MapPin, title: 'Visit Us', info: '123 Beauty Lane, City' },
+              { icon: MapPin, title: 'Visit Us', info: 'Rachel House, 214-218 High Road, N15 4NP' },
             ].map((contact, index) => (
               <div key={index} className="bg-white/60 backdrop-blur-sm rounded-lg p-6 shadow-md">
                 <contact.icon className="text-sage-500 mx-auto mb-3" size={24} />

@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { Menu, X, Phone, Calendar, MapPin, Clock } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import Logo from '@/components/ui/Logo'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -20,6 +21,7 @@ const Header = () => {
   const mainNavItems = [
     { href: '/services', label: 'Treatments' },
     { href: '/vitamin-infusions', label: 'IV Therapy' },
+    { href: '/aesthetic-enhancements', label: 'Aesthetic Enhancements' },
     { href: '/about', label: 'About' },
     { href: '/results', label: 'Results' },
     { href: '/contact', label: 'Contact' }
@@ -38,7 +40,7 @@ const Header = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4" />
-                <span>London, Harley Street</span>
+                <span>Rachel House, 214-218 High Road, N15 4NP</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Clock className="w-4 h-4" />
@@ -65,14 +67,8 @@ const Header = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-sage-600 to-sage-700 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">F</span>
-              </div>
-              <div>
-                <h1 className="text-2xl font-bold text-gray-900">FineLine</h1>
-                <p className="text-sm text-sage-600 -mt-1">Clinic</p>
-              </div>
+            <Link href="/" className="flex items-center">
+              <Logo size="md" variant="dark" showText={true} />
             </Link>
 
             {/* Desktop Navigation */}

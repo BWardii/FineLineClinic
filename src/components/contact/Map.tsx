@@ -43,11 +43,16 @@ const Map = () => {
               <h3 className="text-lg font-poppins font-semibold text-gray-800 mb-2">
                 FineLine Clinic
               </h3>
-              <p className="text-gray-600">123 Beauty Lane, Suite 200</p>
-              <p className="text-gray-600">Downtown City, ST 12345</p>
-              <button className="mt-4 btn-primary">
+              <p className="text-gray-600">Rachel House, 214-218 High Road, N15 4NP</p>
+              <p className="text-gray-600 mb-4">London, United Kingdom</p>
+              <a 
+                href="https://maps.google.com/?q=Rachel+House+214-218+High+Road+N15+4NP+London"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 btn-primary inline-block"
+              >
                 Open in Google Maps
-              </button>
+              </a>
             </div>
           </div>
         </motion.div>
@@ -62,21 +67,21 @@ const Map = () => {
           <div className="text-center">
             <h4 className="font-poppins font-semibold text-gray-800 mb-3">Parking</h4>
             <p className="text-gray-600 text-sm">
-              Free parking available in our building garage. Entrance on Beauty Lane.
+              Street parking available on High Road. Pay and display parking nearby.
             </p>
           </div>
           
           <div className="text-center">
-            <h4 className="font-poppins font-semibold text-gray-800 mb-3">Public Transit</h4>
+            <h4 className="font-poppins font-semibold text-gray-800 mb-3">Public Transport</h4>
             <p className="text-gray-600 text-sm">
-              Metro Station: Downtown Central (2 blocks). Bus routes 15, 22, 45.
+              Tottenham Hale Station nearby. Multiple bus routes along High Road.
             </p>
           </div>
           
           <div className="text-center">
             <h4 className="font-poppins font-semibold text-gray-800 mb-3">Accessibility</h4>
             <p className="text-gray-600 text-sm">
-              Fully wheelchair accessible with elevator access to our second-floor suite.
+              Ground floor access available. Please contact us for accessibility requirements.
             </p>
           </div>
         </motion.div>

@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { Facebook, Instagram, Twitter, Youtube, MapPin, Phone, Mail, Clock } from 'lucide-react'
+import Logo from '@/components/ui/Logo'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -47,13 +48,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-sage-400 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">FL</span>
-              </div>
-              <span className="font-poppins font-semibold text-xl">
-                FineLine Clinic
-              </span>
+            <Link href="/" className="inline-block mb-6">
+              <Logo size="md" variant="light" showText={true} />
             </Link>
             
             <p className="text-gray-300 mb-6 leading-relaxed">
@@ -65,7 +61,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin size={16} className="text-sage-400 flex-shrink-0" />
-                <span className="text-gray-300 text-sm">123 Beauty Lane, City, State 12345</span>
+                <span className="text-gray-300 text-sm">Rachel House, 214-218 High Road, N15 4NP</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={16} className="text-sage-400 flex-shrink-0" />
