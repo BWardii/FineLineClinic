@@ -37,7 +37,7 @@ const FAQ = () => {
     },
     {
       question: 'Do you accept insurance?',
-      answer: 'Vitamin infusion therapy is typically considered elective and not covered by insurance. However, we offer flexible payment options and package deals to make treatments more affordable.'
+      answer: 'Vitamin infusion therapy is typically considered elective and not covered by insurance. We offer package deals to make treatments more affordable.'
     },
     {
       question: 'Who is not a candidate for vitamin infusions?',

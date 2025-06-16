@@ -49,7 +49,7 @@ const AestheticFAQ = () => {
     },
     {
       question: 'How much do aesthetic treatments cost?',
-      answer: 'Costs vary depending on the treatment type, area treated, and amount of product required. Botox starts from £135, dermal fillers from £250, and microneedling treatments from £150. We provide detailed pricing during your consultation and offer package deals for multiple treatments. Payment plans may be available for larger treatment programmes.'
+      answer: 'Costs vary depending on the treatment type, area treated, and amount of product required. Botox starts from £135, dermal fillers from £250, and microneedling treatments from £150. We provide detailed pricing during your consultation and offer package deals for multiple treatments.'
     }
   ]
 

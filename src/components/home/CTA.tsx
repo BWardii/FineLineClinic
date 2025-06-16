@@ -96,12 +96,12 @@ const CTA = () => {
             className="mt-12 pt-8 border-t border-white/20"
           >
             <p className="text-sage-200 text-sm mb-4">
-              ✨ Complimentary consultations • Flexible payment options • Same-day appointments available
+              ✨ Complimentary consultations • Same-day appointments available
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-sage-200">
               <span>📍 Rachel House, 214-218 High Road, N15 4NP</span>
               <span>🕒 Mon-Sat: 9AM-7PM</span>
-              <span>📧 info@finelineclinic.com</span>
+              <span>📧 Hello@finelineClinic.co.uk</span>
             </div>
           </motion.div>
         </div>
