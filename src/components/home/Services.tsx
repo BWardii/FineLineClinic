@@ -17,7 +17,7 @@ const Services = () => {
       description: 'Replenish and revitalize your body with our premium vitamin infusions for energy, immunity, and beauty.',
       features: ['Energy Boost', 'Immune Support', 'Beauty Enhancement', 'Detoxification'],
       price: 'From £99',
-      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=500&q=80',
+      image: '/images/1000163192.jpg',
       href: '/vitamin-infusions',
       color: 'from-blue-500 to-cyan-500'
     },
@@ -91,7 +91,7 @@ const Services = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
                   onError={(e) => {
-                    e.currentTarget.src = 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=500&q=80'
+                    e.currentTarget.src = 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=500&q=80'
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
