@@ -36,7 +36,7 @@ export default function HeroOverlay({ className }: HeroOverlayProps) {
         
         {/* Subtitle - More Compact on Mobile */}
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white font-medium mb-6 sm:mb-8 md:mb-12 leading-relaxed text-shadow-lg drop-shadow-xl max-w-4xl mx-auto">
-          Experience the perfect blend of medical expertise and artistic vision at FineLine Clinic. Safe, effective treatments that help you look and feel your absolute best.
+          Confidence starts with a single treatment
         </p>
         
         {/* CTA Buttons - More Compact on Mobile */}
