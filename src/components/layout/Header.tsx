@@ -29,10 +29,25 @@ const Header = () => {
 
   return (
     <>
-      {/* Top Contact Bar */}
-      <div className="bg-sage-700 text-white py-2 text-sm">
+      {/* Top Contact Bar - Optimized for Mobile */}
+      <div className="bg-sage-700 text-white py-1.5 md:py-2 text-xs md:text-sm">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between">
+          {/* Mobile Layout - Single Row with Essential Info */}
+          <div className="md:hidden flex items-center justify-between">
+            <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-1">
+                <Phone className="w-3 h-3" />
+                <span className="font-medium">020 7123 4567</span>
+              </div>
+            </div>
+            <div className="flex items-center space-x-1 text-xs">
+              <Clock className="w-3 h-3" />
+              <span>Mon-Fri 9-6</span>
+            </div>
+          </div>
+          
+          {/* Desktop Layout - Full Info */}
+          <div className="hidden md:flex items-center justify-between">
             <div className="flex items-center space-x-6">
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4" />
@@ -54,7 +69,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Main Header */}
+      {/* Main Header - Optimized Heights */}
       <motion.header
         className={`sticky top-0 z-50 transition-all duration-300 ${
           isScrolled 
@@ -65,10 +80,11 @@ const Header = () => {
         animate={{ y: 0 }}
       >
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center">
-              <Logo size="md" variant="dark" showText={true} />
+              <Logo size="sm" variant="dark" showText={true} className="md:hidden" />
+              <Logo size="md" variant="dark" showText={true} className="hidden md:block" />
             </Link>
 
             {/* Desktop Navigation */}
@@ -117,7 +133,7 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu - Optimized */}
         <AnimatePresence>
           {isMenuOpen && (
             <motion.div
@@ -126,22 +142,36 @@ const Header = () => {
               exit={{ opacity: 0, height: 0 }}
               className="lg:hidden bg-white border-t border-sage-100 shadow-lg"
             >
-              <div className="container mx-auto px-4 py-6">
-                <nav className="flex flex-col space-y-4">
+              <div className="container mx-auto px-4 py-4">
+                {/* Mobile Contact Info */}
+                <div className="mb-4 p-3 bg-sage-50 rounded-lg">
+                  <div className="flex items-center justify-between text-sm">
+                    <div className="flex items-center space-x-2 text-sage-700">
+                      <MapPin className="w-4 h-4" />
+                      <span>Rachel House, N15 4NP</span>
+                    </div>
+                    <div className="flex items-center space-x-2 text-sage-700">
+                      <Clock className="w-4 h-4" />
+                      <span>Mon-Fri 9-6</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <nav className="flex flex-col space-y-3">
                   {mainNavItems.map((item) => (
                     <Link
                       key={item.href}
                       href={item.href}
-                      className="text-gray-700 hover:text-sage-600 font-medium py-2 transition-colors"
+                      className="text-gray-700 hover:text-sage-600 font-medium py-2 transition-colors border-b border-gray-100 last:border-b-0"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {item.label}
                     </Link>
                   ))}
-                  <div className="pt-4 border-t border-sage-100 flex flex-col space-y-3">
+                  <div className="pt-3 flex flex-col space-y-3">
                     <Link
                       href="/contact"
-                      className="flex items-center space-x-2 text-sage-600 font-medium py-2"
+                      className="flex items-center justify-center space-x-2 text-sage-600 font-medium py-3 border border-sage-200 rounded-lg hover:bg-sage-50 transition-colors"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       <Phone className="w-4 h-4" />
@@ -149,7 +179,7 @@ const Header = () => {
                     </Link>
                     <Link
                       href="/booking"
-                      className="bg-sage-600 text-white px-6 py-3 rounded-full font-semibold text-center transition-colors hover:bg-sage-700"
+                      className="bg-sage-600 text-white px-6 py-3 rounded-lg font-semibold text-center transition-colors hover:bg-sage-700 shadow-lg"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Book Consultation
