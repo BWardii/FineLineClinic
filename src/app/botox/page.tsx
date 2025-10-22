@@ -13,12 +13,13 @@ export default function BotoxLandingPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Netlify form detection (hidden) */}
-      <form name="botox-booking" data-netlify="true" netlify-honeypot="bot-field" hidden>
-        <input type="hidden" name="form-name" value="botox-booking" />
+      <form name="booking" data-netlify="true" data-netlify-honeypot="bot-field" method="POST" action="/" hidden>
+        <input type="hidden" name="form-name" value="booking" />
         <p hidden>
           <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
         </p>
         <input name="plan" />
+        <input name="price" />
         <input name="name" />
         <input name="email" />
         <input name="phone" />
