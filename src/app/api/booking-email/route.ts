@@ -31,12 +31,15 @@ export async function POST(request: Request) {
 
     const dynamicData = {
       name: body.name,
+      Name: body.name, // for templates using capitalized key
       email: body.email,
       phone: body.phone,
       plan: body.plan,
       price: String(body.price ?? ''),
       date: body.date,
       time: body.time,
+      Date: body.date, // match {{Date}} placeholder
+      Time: body.time, // match {{Time}} placeholder
       note: body.note ?? '',
     }
 
