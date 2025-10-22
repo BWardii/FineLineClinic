@@ -5,11 +5,11 @@ export default function BotoxHero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-[#12100f] via-[#1a1513] to-[#2b221e]">
       <div className="absolute inset-0 opacity-30">
-        <Image src="/images/1000163192.jpg" alt="Aesthetic model" fill className="object-cover" priority />
+        <Image src="/images/Untitled-design-2024-05-16T164949.680-750x290.jpg" alt="Aesthetic face lift vector background" fill className="object-cover object-center" priority />
       </div>
       <div className="relative mx-auto max-w-7xl px-5 py-20 md:py-28">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-          <div className="lg:col-span-7 text-white">
+          <div className="lg:col-span-6 text-white">
             <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 px-4 py-2 rounded-full mb-5">
               <span className="text-xs font-semibold tracking-wider text-white/90">DOCTOR-LED • CQC REGISTERED</span>
             </div>
@@ -34,7 +34,7 @@ export default function BotoxHero() {
               <div className="flex items-center gap-2"><span>✓</span><span>Premium FDA‑approved products</span></div>
             </div>
           </div>
-          <div className="lg:col-span-5">
+          <div className="lg:col-span-6">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/10">
               <Image src="/images/botox-review-before-and-after-1540816995.jpg" alt="Botox results — before and after" width={900} height={1100} className="w-full h-auto object-cover" />
               <div className="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-black/70 to-transparent">

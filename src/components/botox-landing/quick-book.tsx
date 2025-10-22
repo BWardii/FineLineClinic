@@ -52,10 +52,26 @@ export default function BotoxQuickBook() {
         price: String(price),
         ...form,
       })
-      await fetch('/', {
+      // Post to a static path so Netlify intercepts form submission (avoids Next server action errors)
+      await fetch('/hidden-form.html', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: body.toString(),
+      })
+      // Fire transactional email
+      await fetch('/api/booking-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: form.email,
+          name: form.name,
+          phone: form.phone,
+          plan,
+          price,
+          date: form.date,
+          time: form.time,
+          note: form.note,
+        }),
       })
       router.push(`/thank-you?service=botox&plan=${encodeURIComponent(plan)}`)
     } catch {
