@@ -73,6 +73,23 @@ export default function BotoxQuickBook() {
           note: form.note,
         }),
       })
+
+      // Send to Make.com webhook
+      await fetch('https://hook.eu2.make.com/xjhrf44pjitv0mh63dthl8r4yr3xfmls', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          booking: {
+            name: form.name,
+            date: form.date,
+            time: form.time,
+            email: form.email,
+            phone: form.phone,
+            service: `${PLAN_LABELS[plan]} Anti‑Wrinkle Therapy`
+          }
+        }),
+      })
+
       router.push(`/thank-you?service=botox&plan=${encodeURIComponent(plan)}`)
     } catch {
       // Fallback to inline success state if redirect fails
