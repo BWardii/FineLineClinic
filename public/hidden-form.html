@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hidden Netlify Detection Form</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <style>body{display:none}</style>
+  </head>
+  <body>
+    <!-- Hidden static form for Netlify detection: must match JSX form fields -->
+    <form name="botox-booking" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="botox-booking" />
+      <p hidden>
+        <label>Don’t fill this out: <input name="bot-field" /></label>
+      </p>
+      <input name="plan" />
+      <input name="price" />
+      <input name="name" />
+      <input name="email" />
+      <input name="phone" />
+      <input name="date" />
+      <input name="time" />
+      <textarea name="note"></textarea>
+    </form>
+  </body>
+  </html>
+
+
