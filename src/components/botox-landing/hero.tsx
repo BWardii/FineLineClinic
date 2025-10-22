@@ -36,7 +36,7 @@ export default function BotoxHero() {
           </div>
           <div className="lg:col-span-5">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/10">
-              <Image src="/images/1000163192.jpg" alt="Botox results" width={900} height={1100} className="w-full h-auto object-cover" />
+              <Image src="/images/botox-review-before-and-after-1540816995.jpg" alt="Botox results — before and after" width={900} height={1100} className="w-full h-auto object-cover" />
               <div className="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-black/70 to-transparent">
                 <div className="flex items-center justify-between text-white">
                   <div>
