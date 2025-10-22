@@ -97,7 +97,14 @@ export default function BotoxQuickBook() {
       <div className="absolute inset-x-4 md:inset-x-0 md:left-1/2 md:-translate-x-1/2 top-6 md:top-12 md:max-w-5xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-2">
           {/* Left: form */}
-          <form onSubmit={onSubmit} className="p-6 md:p-8">
+          <form onSubmit={onSubmit} method="post" data-netlify="true" className="p-6 md:p-8">
+            {/* Netlify requires form-name for AJAX/JSX forms */}
+            <input type="hidden" name="form-name" value="botox-booking" />
+            {/* Honeypot field */}
+            <div className="hidden"><label>Don’t fill this out if you're human: <input name="bot-field" /></label></div>
+            {/* Hidden mirrors so static parser has names/values when JS is disabled */}
+            <input type="hidden" name="plan" value={plan} />
+            <input type="hidden" name="price" value={String(price)} />
             <div className="mb-6">
               <h3 className="text-xl font-bold text-gray-900">Checkout</h3>
               <p className="text-sm text-gray-600 mt-1">All bookings are securely processed. No payment taken online.</p>
