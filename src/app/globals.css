@@ -66,6 +66,15 @@
   .text-shadow-3xl {
     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
   }
+  /* Marquee animation for announcement banner */
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  .marquee {
+    animation: marquee 18s linear infinite;
+    white-space: nowrap;
+  }
 }
 
 /* Custom scrollbar */

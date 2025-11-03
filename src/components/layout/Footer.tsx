@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Facebook, Instagram, Twitter, Youtube, MapPin, Phone, Mail, Clock } from 'lucide-react'
+import { Facebook, Instagram, Twitter, Youtube, MapPin, Phone, Mail, Clock, ShieldCheck, BadgeCheck, Star } from 'lucide-react'
 import Logo from '@/components/ui/Logo'
 
 const Footer = () => {
@@ -163,6 +163,30 @@ const Footer = () => {
               <button className="btn-primary px-6 py-2">
                 Subscribe
               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Trust Signals */}
+      <div className="border-t border-gray-800">
+        <div className="container-max py-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="flex items-center gap-3 rounded-xl bg-gray-800/50 p-4">
+              <ShieldCheck className="text-sage-400" size={18} />
+              <span className="text-sm text-gray-200">GMC Verified</span>
+            </div>
+            <div className="flex items-center gap-3 rounded-xl bg-gray-800/50 p-4">
+              <BadgeCheck className="text-sage-400" size={18} />
+              <span className="text-sm text-gray-200">CQC Registered</span>
+            </div>
+            <div className="flex items-center gap-3 rounded-xl bg-gray-800/50 p-4">
+              <Star className="text-sage-400" size={18} />
+              <span className="text-sm text-gray-200">Google Reviews</span>
+            </div>
+            <div className="flex items-center gap-3 rounded-xl bg-gray-800/50 p-4">
+              <Star className="text-sage-400" size={18} />
+              <span className="text-sm text-gray-200">Doctify Rated</span>
             </div>
           </div>
         </div>

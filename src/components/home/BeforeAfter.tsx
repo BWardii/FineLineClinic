@@ -41,7 +41,7 @@ const BeforeAfter = () => {
 
   return (
     <section ref={ref} className="section-padding bg-white">
-      <div className="container-max">
+      <div className="w-full">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
@@ -56,15 +56,15 @@ const BeforeAfter = () => {
           </p>
         </motion.div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-[90rem] px-4 md:px-8 mx-auto">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
           >
-            <div className="bg-gradient-to-br from-sage-50 to-cream-50 rounded-2xl p-8 shadow-xl">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="bg-gradient-to-br from-sage-50 to-cream-50 rounded-[2rem] p-8 md:p-12 lg:p-14 shadow-2xl">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14 items-center">
                 {/* Before Image */}
                 <div className="relative">
                   <div className="absolute -top-4 -left-4 bg-gray-800 text-white px-4 py-2 rounded-lg font-medium z-10">
@@ -73,7 +73,7 @@ const BeforeAfter = () => {
                   <img
                     src={beforeAfterImages[currentIndex].before}
                     alt="Before treatment"
-                    className="w-full h-80 object-cover rounded-lg shadow-md"
+                    className="w-full h-[22rem] md:h-[34rem] lg:h-[40rem] xl:h-[46rem] object-cover rounded-xl shadow-md"
                   />
                 </div>
 
@@ -85,7 +85,7 @@ const BeforeAfter = () => {
                   <img
                     src={beforeAfterImages[currentIndex].after}
                     alt="After treatment"
-                    className="w-full h-80 object-cover rounded-lg shadow-md"
+                    className="w-full h-[22rem] md:h-[34rem] lg:h-[40rem] xl:h-[46rem] object-cover rounded-xl shadow-md"
                   />
                 </div>
               </div>
@@ -99,20 +99,20 @@ const BeforeAfter = () => {
                 </p>
 
                 {/* Navigation */}
-                <div className="flex items-center justify-center space-x-4">
+                <div className="flex items-center justify-center space-x-6">
                   <button
                     onClick={prevImage}
-                    className="w-12 h-12 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-sage-50 transition-colors"
+                    className="w-16 h-16 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-sage-50 transition-colors"
                   >
-                    <ChevronLeft size={20} className="text-gray-600" />
+                    <ChevronLeft size={28} className="text-gray-600" />
                   </button>
                   
-                  <div className="flex space-x-2">
+                  <div className="flex space-x-2.5">
                     {beforeAfterImages.map((_, index) => (
                       <button
                         key={index}
                         onClick={() => setCurrentIndex(index)}
-                        className={`w-3 h-3 rounded-full transition-colors ${
+                        className={`w-4 h-4 rounded-full transition-colors ${
                           index === currentIndex ? 'bg-sage-500' : 'bg-gray-300'
                         }`}
                       />
@@ -121,9 +121,9 @@ const BeforeAfter = () => {
                   
                   <button
                     onClick={nextImage}
-                    className="w-12 h-12 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-sage-50 transition-colors"
+                    className="w-16 h-16 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-sage-50 transition-colors"
                   >
-                    <ChevronRight size={20} className="text-gray-600" />
+                    <ChevronRight size={28} className="text-gray-600" />
                   </button>
                 </div>
               </div>

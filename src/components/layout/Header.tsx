@@ -20,6 +20,7 @@ const Header = () => {
 
   const mainNavItems = [
     { href: '/services', label: 'Treatments' },
+    { href: '/botox', label: 'Botox' },
     { href: '/vitamin-infusions', label: 'IV Therapy' },
     { href: '/aesthetic-enhancements', label: 'Aesthetic Enhancements' },
     { href: '/about', label: 'About' },
@@ -29,6 +30,14 @@ const Header = () => {
 
   return (
     <>
+      {/* Moving offer banner */}
+      <div className="bg-[#EAB308] text-[#221a16] py-2 text-sm overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="marquee font-semibold">
+            💉 Limited Time: 3 Areas for the Price of 2 — Offer expires this week. Book your doctor‑led consultation today.  •  💉 Limited Time: 3 Areas for the Price of 2 — Offer expires this week. Book your doctor‑led consultation today.
+          </div>
+        </div>
+      </div>
       {/* Top Contact Bar - Optimized for Mobile */}
       <div className="bg-sage-700 text-white py-1.5 md:py-2 text-xs md:text-sm">
         <div className="container mx-auto px-4">
