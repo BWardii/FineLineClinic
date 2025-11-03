@@ -98,7 +98,7 @@ export default function BotoxLandingPage() {
               name: 'Who performs the treatment?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'All treatments are performed or supervised by GMC‑registered doctors in our CQC‑registered clinic.',
+                text: 'All treatments are performed or supervised by GMC‑registered doctors in our London clinic.',
               },
             },
             {
@@ -128,20 +128,40 @@ export default function BotoxLandingPage() {
         <textarea name="note" />
       </form>
       <BotoxHero />
+      {/* Before & After highlight (unique image) */}
+      <section className="py-10 px-5 bg-white" id="results">
+        <div className="mx-auto max-w-5xl">
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-1 ring-gray-900/10">
+            <Image
+              src="/images/botox_11-1024x512.jpg"
+              alt="Botox results — before and after"
+              width={1024}
+              height={512}
+              sizes="(min-width: 768px) 60vw, 100vw"
+              className="w-full h-auto object-cover"
+              priority={false}
+            />
+            <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent flex items-center justify-between">
+              <span className="text-white text-sm md:text-base font-semibold">Real Patient Results</span>
+              <a href="#book" className="hidden sm:inline-flex items-center justify-center rounded-full bg-[#EAB308] text-[#221a16] px-5 py-2 text-sm font-semibold shadow-md hover:brightness-110">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
       <BotoxPricing />
       <BotoxTrust />
 
       {/* Botox treatment areas / diagram */}
-      <section className="py-16 px-5 bg-white" id="treatment-areas">
+      <section className="py-14 px-5 bg-white" id="treatment-areas">
         <div className="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           <div className="lg:col-span-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            <h2 className="text-2xl md:text-4xl font-bold text-gray-900">
               Where Botox Works Best
             </h2>
-            <p className="mt-4 text-gray-600">
+            <p className="mt-3 text-gray-600 text-sm md:text-base">
               Strategic micro‑doses relax overactive muscles while preserving natural expression. The plan is tailored to your features after an in‑clinic assessment.
             </p>
-            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="rounded-2xl border p-6">
                 <h3 className="font-semibold text-gray-900">Upper Face</h3>
                 <ul className="mt-3 text-sm text-gray-700 space-y-2">
@@ -161,7 +181,7 @@ export default function BotoxLandingPage() {
                 </ul>
               </div>
             </div>
-            <p className="mt-6 text-xs text-gray-500">
+            <p className="mt-5 text-xs text-gray-500">
               Illustrative diagram only. Injection points and dosing vary by individual; your GMC doctor will advise the safest, most natural approach for you.
             </p>
           </div>
@@ -174,7 +194,7 @@ export default function BotoxLandingPage() {
                 height={1500}
                 sizes="(min-width: 1024px) 50vw, 100vw"
                 className="w-full h-auto object-cover"
-                priority
+                priority={false}
               />
             </div>
           </div>
@@ -182,18 +202,18 @@ export default function BotoxLandingPage() {
       </section>
 
       {/* Clinician bio / injector section */}
-      <section className="py-16 px-5 bg-white" id="clinician">
+      <section className="py-14 px-5 bg-white" id="clinician">
         <div className="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           <div className="lg:col-span-5 order-2 lg:order-1">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Meet Your Injector</h2>
+            <h2 className="text-2xl md:text-4xl font-bold text-gray-900">Meet Your Injector</h2>
             <h3 className="mt-2 text-xl font-semibold text-sage-600">Dr. Salad</h3>
-            <p className="mt-4 text-gray-600">
+            <p className="mt-3 text-gray-600 text-sm md:text-base">
               Dr. Salad  is a highly qualified medical doctor with a Master’s degree in Dermatology and years of experience in advanced skin and aesthetic procedures.
             </p>
-            <p className="mt-4 text-gray-600">
+            <p className="mt-4 text-gray-600 text-sm md:text-base">
               Having performed hundreds of successful injectable treatments and minor cosmetic procedures, Dr. Salad combines medical expertise with an artistic eye to deliver natural, balanced results never overdone.
             </p>
-            <p className="mt-4 text-gray-600">
+            <p className="mt-4 text-gray-600 text-sm md:text-base">
               She has worked with some of the UK’s leading aesthetic clinics, earning a reputation for being skilled, approachable, and genuinely caring. Every treatment is carried out with your safety, comfort, and satisfaction in mind.
             </p>
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -207,7 +227,7 @@ export default function BotoxLandingPage() {
                   <li>• Uses Only Premium, FDA‑Approved Products</li>
                 </ul>
               </div>
-              <div className="rounded-2xl border p-6">
+            <div className="rounded-2xl border p-6">
                 <h3 className="font-semibold text-gray-900">Treatment Approach</h3>
                 <ul className="mt-3 text-sm text-gray-700 space-y-2">
                   <li>• Assessment‑led, bespoke dosing</li>
@@ -253,7 +273,7 @@ export default function BotoxLandingPage() {
             </div>
             <div className="rounded-2xl border p-6">
               <h3 className="font-semibold text-gray-900">Who performs the treatment?</h3>
-              <p className="mt-2 text-sm">All anti‑wrinkle injections are performed or supervised by GMC‑registered doctors in our CQC‑registered London clinic.</p>
+              <p className="mt-2 text-sm">All anti‑wrinkle injections are performed or supervised by GMC‑registered doctors in our London clinic.</p>
             </div>
             <div className="rounded-2xl border p-6">
               <h3 className="font-semibold text-gray-900">Is there any downtime?</h3>

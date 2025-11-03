@@ -178,7 +178,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center gap-3 rounded-xl bg-gray-800/50 p-4">
               <BadgeCheck className="text-sage-400" size={18} />
-              <span className="text-sm text-gray-200">CQC Registered</span>
+              <span className="text-sm text-gray-200">Doctor‑Led Care</span>
             </div>
             <div className="flex items-center gap-3 rounded-xl bg-gray-800/50 p-4">
               <Star className="text-sage-400" size={18} />
