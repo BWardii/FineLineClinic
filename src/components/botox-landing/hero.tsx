@@ -1,7 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
-import OpenWidgetButton from '@/components/booking/OpenWidgetButton'
-
 export default function BotoxHero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-[#12100f] via-[#1a1513] to-[#2b221e]">
@@ -22,9 +19,13 @@ export default function BotoxHero() {
               Anti‑wrinkle Botox by GMC‑registered doctors in London. Same‑day appointments. Limited new client promo.
             </p>
             <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <OpenWidgetButton ariaLabel="Claim 3-for-2 Botox offer" className="inline-flex items-center justify-center rounded-full bg-[#EAB308] text-[#221a16] px-6 py-4 w-full sm:w-auto font-semibold shadow-xl hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#EAB308] transition">
+              <a
+                href="https://booking.eswk.co.uk/fineline-clinic"
+                aria-label="Claim 3-for-2 Botox offer"
+                className="inline-flex items-center justify-center rounded-full bg-[#EAB308] text-[#221a16] px-6 py-4 w-full sm:w-auto font-semibold shadow-xl hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#EAB308] transition"
+              >
                 Claim 3‑for‑2 Offer
-              </OpenWidgetButton>
+              </a>
               <a href="tel:02071234567" className="inline-flex items-center justify-center rounded-full border border-white/30 text-white px-6 py-4 w-full sm:w-auto font-semibold hover:bg-white/10 transition">
                 Call 020 7123 4567
               </a>
