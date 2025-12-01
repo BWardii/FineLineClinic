@@ -2,6 +2,8 @@ import { Metadata } from 'next'
 import Script from 'next/script'
 import Image from 'next/image'
 import Header from '@/components/layout/Header'
+import EasyWeekWidgetLoader from '@/components/booking/EasyWeekWidgetLoader'
+import OpenWidgetButton from '@/components/booking/OpenWidgetButton'
 import Footer from '@/components/layout/Footer'
 import BotoxHero from '@/components/botox-landing/hero'
 import BotoxPricing from '@/components/botox-landing/pricing'
@@ -38,6 +40,7 @@ export default function BotoxLandingPage() {
   return (
     <main className="min-h-screen bg-white">
       <Header />
+      <EasyWeekWidgetLoader />
       {/* Structured data for Service and FAQ to improve ad relevance and QS */}
       <Script id="botox-service-schema" type="application/ld+json">
         {JSON.stringify({
@@ -316,18 +319,14 @@ export default function BotoxLandingPage() {
               <h3 className="text-2xl md:text-3xl font-bold">New to FineLine? Get 3 Areas for the Price of 2</h3>
               <p className="text-white/80 mt-2">Offer ends this week. Book your doctor‑led consultation today.</p>
             </div>
-            <a href="?book=open&plan=3-areas" className="inline-flex items-center justify-center rounded-full bg-[#EAB308] text-[#221a16] px-8 py-4 font-semibold shadow-xl hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#EAB308] transition">
+            <OpenWidgetButton className="inline-flex items-center justify-center rounded-full bg-[#EAB308] text-[#221a16] px-8 py-4 font-semibold shadow-xl hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#EAB308] transition" ariaLabel="Open booking widget">
               Claim Offer Now
-            </a>
+            </OpenWidgetButton>
           </div>
         </div>
       </section>
       {/* Modal lives at the end so it's above in DOM order */}
       <BotoxQuickBook />
-      {/* Sticky mobile CTA */}
-      <div className="fixed bottom-4 inset-x-4 z-50 md:hidden">
-        <a href="?book=open&plan=3-areas" className="flex items-center justify-center rounded-full bg-[#EAB308] text-[#221a16] py-4 font-bold shadow-xl">Claim Offer Now</a>
-      </div>
       <Footer />
     </main>
   )
