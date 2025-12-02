@@ -56,57 +56,62 @@ export default function BotoxHero() {
           priority
         />
       </div>
-      <div className="relative mx-auto max-w-screen-2xl px-5 py-20 md:py-28">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <div className="relative mx-auto max-w-screen-2xl px-5 py-12 md:py-28">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-10 items-center">
           <div className="lg:col-span-5 text-white">
-            {/* Holiday badge */}
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-red-600/80 to-green-700/80 border border-white/30 px-4 py-2 rounded-full mb-4 shadow-lg">
-              <Gift className="h-4 w-4 text-white" />
-              <span className="text-xs md:text-sm font-bold tracking-wide text-white">
+            {/* Holiday badge - smaller on mobile */}
+            <div className="inline-flex items-center gap-1.5 md:gap-2 bg-gradient-to-r from-red-600/80 to-green-700/80 border border-white/30 px-3 py-1.5 md:px-4 md:py-2 rounded-full mb-3 md:mb-4 shadow-lg">
+              <Gift className="h-3 w-3 md:h-4 md:w-4 text-white" />
+              <span className="text-[10px] md:text-sm font-bold tracking-wide text-white">
                 ❄ WINTER GLOW OFFER ❄
               </span>
-              <Snowflake className="h-4 w-4 text-white" />
+              <Snowflake className="h-3 w-3 md:h-4 md:w-4 text-white" />
             </div>
-            <h1 className="text-3xl md:text-6xl font-bold leading-tight">
+            {/* Headline - reduced on mobile */}
+            <h1 className="text-2xl md:text-6xl font-bold leading-tight">
               Look Radiant This Festive Season
-              <span className="block text-white/80 text-lg md:text-3xl mt-2">
-                3‑for‑2 Holiday Special: Buy 2 areas, get the 3rd FREE
+              <span className="block text-white/80 text-base md:text-3xl mt-1 md:mt-2">
+                3‑for‑2: Buy 2 areas, get the 3rd FREE
               </span>
             </h1>
-            <p className="mt-6 text-white/80 text-lg max-w-xl">
-              Give yourself the gift of smooth, natural results. Doctor-led anti‑wrinkle injections using premium neuromodulators — perfect timing for holiday gatherings and New Year celebrations.
+            {/* Short punchy copy for mobile, full on desktop */}
+            <p className="mt-4 md:mt-6 text-white/80 text-sm md:text-lg max-w-xl">
+              Get holiday-ready with smoother, fresher skin. Safe, doctor-led treatments using premium brands. Book your 3-for-2 package today.
             </p>
-            <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
+            {/* CTA buttons */}
+            <div className="mt-4 md:mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
               <a
                 href="https://booking.eswk.co.uk/fineline-clinic"
                 aria-label="Claim holiday anti-wrinkle offer"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-4 w-full sm:w-auto font-semibold shadow-xl hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-red-600 to-red-700 text-white px-5 py-3 md:px-6 md:py-4 w-full sm:w-auto font-semibold shadow-xl hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition text-sm md:text-base"
               >
-                <Gift className="h-5 w-5" />
+                <Gift className="h-4 w-4 md:h-5 md:w-5" />
                 Claim 3‑for‑2 (Save £189)
               </a>
               <a
                 href="tel:02071234567"
-                className="inline-flex items-center justify-center rounded-full border border-white/30 text-white px-6 py-4 w-full sm:w-auto font-semibold hover:bg-white/10 transition"
+                className="hidden sm:inline-flex items-center justify-center rounded-full border border-white/30 text-white px-6 py-4 w-full sm:w-auto font-semibold hover:bg-white/10 transition"
               >
                 Call 020 7123 4567
               </a>
             </div>
-            <div className="mt-6 flex flex-col gap-3 text-white/90 sm:flex-row">
-              <div className="flex items-center gap-2">
-                <Clock className="h-5 w-5 text-white" />
-                <span className="text-sm font-semibold uppercase tracking-wide">Same Day Appts</span>
+            {/* Trust badges - compact on mobile */}
+            <div className="mt-4 md:mt-6 flex flex-wrap gap-2 md:gap-3 text-white/90">
+              <div className="flex items-center gap-1.5 md:gap-2">
+                <Clock className="h-4 w-4 md:h-5 md:w-5 text-white" />
+                <span className="text-xs md:text-sm font-semibold uppercase tracking-wide">Same Day</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Star className="h-5 w-5 text-amber-400" />
-                <span className="text-sm font-semibold uppercase tracking-wide">5-Star Rated</span>
+              <div className="flex items-center gap-1.5 md:gap-2">
+                <Star className="h-4 w-4 md:h-5 md:w-5 text-amber-400" />
+                <span className="text-xs md:text-sm font-semibold uppercase tracking-wide">5-Star</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Snowflake className="h-5 w-5 text-sky-300" />
-                <span className="text-sm font-semibold uppercase tracking-wide">Limited Time</span>
+              <div className="flex items-center gap-1.5 md:gap-2">
+                <Snowflake className="h-4 w-4 md:h-5 md:w-5 text-sky-300" />
+                <span className="text-xs md:text-sm font-semibold uppercase tracking-wide">Limited</span>
               </div>
             </div>
-            <div className="mt-8 flex flex-wrap gap-4 text-xs text-white/70">
+            {/* Feature list - hidden on mobile to save space */}
+            <div className="hidden md:flex mt-8 flex-wrap gap-4 text-xs text-white/70">
               <div className="flex items-center gap-2">
                 <span>✓</span>
                 <span>Results in 3‑5 days</span>
@@ -122,7 +127,7 @@ export default function BotoxHero() {
             </div>
           </div>
           <div className="lg:col-span-7 lg:mt-8">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/20">
+            <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/20">
               <Image
                 src="/images/botox-forehead-before-after.jpg"
                 alt="Anti-wrinkle forehead treatment — before and after"
@@ -133,18 +138,18 @@ export default function BotoxHero() {
                 quality={85}
                 priority
               />
-              <div className="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-black/80 to-transparent">
+              <div className="absolute bottom-0 left-0 right-0 p-3 md:p-5 bg-gradient-to-t from-black/80 to-transparent">
                 <div className="flex items-center justify-between text-white">
                   <div>
-                    <div className="text-xs opacity-80">From</div>
-                    <div className="text-2xl font-bold">£129 / area</div>
+                    <div className="text-[10px] md:text-xs opacity-80">From</div>
+                    <div className="text-lg md:text-2xl font-bold">£129 / area</div>
                   </div>
                   <div className="text-right">
-                    <div className="inline-flex items-center gap-1 text-xs bg-red-600/80 px-2 py-1 rounded-full mb-1">
-                      <Snowflake className="h-3 w-3" />
+                    <div className="inline-flex items-center gap-1 text-[10px] md:text-xs bg-red-600/80 px-2 py-0.5 md:py-1 rounded-full mb-1">
+                      <Snowflake className="h-2.5 w-2.5 md:h-3 md:w-3" />
                       Holiday Special
                     </div>
-                    <div className="text-lg font-semibold">£189 (3‑for‑2)</div>
+                    <div className="text-sm md:text-lg font-semibold">£189 (3‑for‑2)</div>
                   </div>
                 </div>
               </div>
