@@ -20,7 +20,7 @@ const Header = () => {
 
   const mainNavItems = [
     { href: '/services', label: 'Treatments' },
-    { href: '/botox', label: 'Botox' },
+    { href: '/anti-wrinkle-injections', label: 'Botox' },
     { href: '/vitamin-infusions', label: 'IV Therapy' },
     { href: '/aesthetic-enhancements', label: 'Aesthetic Enhancements' },
     { href: '/about', label: 'About' },

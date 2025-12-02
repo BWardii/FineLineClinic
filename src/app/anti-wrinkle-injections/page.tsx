@@ -26,12 +26,12 @@ export const metadata: Metadata = {
 		'GMC doctor',
 		'same‑day appointments',
 	],
-	alternates: { canonical: '/botox' },
+	alternates: { canonical: '/anti-wrinkle-injections' },
 	openGraph: {
 		title: 'Botox London | Anti‑Wrinkle Injections by GMC Doctors | 3‑for‑2',
 		description:
 			'Botox (anti‑wrinkle) in London by GMC‑registered doctors. From £129 per area. Same‑day appointments. 3‑for‑2 new client offer. Book online in seconds.',
-		url: '/botox',
+		url: '/anti-wrinkle-injections',
 	},
 	robots: { index: true, follow: true },
 }
@@ -56,14 +56,14 @@ export default function BotoxLandingPage() {
             telephone: '+44 20 7123 4567',
           },
           priceRange: '£129-£189',
-          url: '/botox',
+          url: '/anti-wrinkle-injections',
           offers: {
             '@type': 'Offer',
             priceCurrency: 'GBP',
             price: '189',
             category: '3 areas (3‑for‑2)',
             availability: 'https://schema.org/InStock',
-            url: '/botox#pricing',
+            url: '/anti-wrinkle-injections#pricing',
           },
         })}
       </Script>

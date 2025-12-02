@@ -28,7 +28,7 @@ const Services = () => {
       features: ['Botox Treatments', 'Dermal Fillers', 'Lip Enhancement', 'Facial Contouring'],
       price: 'From £135',
       image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=500&q=80',
-      href: '/botox',
+      href: '/anti-wrinkle-injections',
       color: 'from-sage-500 to-sage-600'
     },
     {
