@@ -12,9 +12,9 @@ const AestheticTreatments = () => {
 
   const aestheticTreatments = [
     {
-      name: 'Botox Treatment',
+      name: 'Anti-Wrinkle Injections',
       price: 'from £135',
-      description: 'FDA-approved botulinum toxin to reduce dynamic wrinkles and fine lines. Our expert practitioners deliver natural-looking results that enhance your features while maintaining facial expression.',
+      description: 'Doctor-led neuromodulator treatments to soften dynamic wrinkles and fine lines while keeping expression natural and balanced.',
       benefits: ['Wrinkle reduction', 'Preventative aging', 'Quick procedure', 'Minimal downtime'],
       duration: '15-30 minutes',
       icon: Syringe,

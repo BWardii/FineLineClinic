@@ -13,7 +13,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: 'How long do the results typically last?',
-      answer: 'Results vary depending on the treatment. Botox typically lasts 3-4 months, dermal fillers can last 6-18 months, and vitamin infusions provide immediate benefits that can last several weeks. During your consultation, we\'ll discuss expected duration for your specific treatment plan.',
+      answer: 'Results vary depending on the treatment. Anti-wrinkle injections typically last 3-4 months, dermal fillers can last 6-18 months, and vitamin infusions provide immediate benefits that can last several weeks. During your consultation, we\'ll discuss expected duration for your specific treatment plan.',
     },
     {
       question: 'Are the treatments painful?',
@@ -33,7 +33,7 @@ const FAQ = () => {
     },
     {
       question: 'Can I combine multiple treatments?',
-      answer: 'Yes! Many clients benefit from combination treatments. For example, Botox and dermal fillers work beautifully together, and vitamin infusions complement any aesthetic treatment. We\'ll create a comprehensive plan that addresses all your concerns safely and effectively.',
+      answer: 'Yes! Many clients benefit from combination treatments. For example, anti-wrinkle injections and dermal fillers work beautifully together, and vitamin infusions complement any aesthetic treatment. We\'ll create a comprehensive plan that addresses all your concerns safely and effectively.',
     },
     {
       question: 'What if I\'m not satisfied with my results?',

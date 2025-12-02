@@ -4,8 +4,8 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'FineLine Clinic - Wellness & Aesthetics',
-  description: 'Doctor-led treatments. Natural results. Timeless confidence. Professional aesthetic treatments including Botox, fillers, and vitamin infusions with Dr. Ayaan.',
-  keywords: 'aesthetic clinic, botox, fillers, vitamin infusions, beauty treatments, cosmetic procedures, FineLine Clinic, wellness, aesthetics',
+  description: 'Doctor-led treatments. Natural results. Timeless confidence. Professional aesthetic treatments including anti-wrinkle injections, fillers, and vitamin infusions with Dr. Ayaan.',
+  keywords: 'aesthetic clinic, anti-wrinkle injections, fillers, vitamin infusions, beauty treatments, cosmetic procedures, FineLine Clinic, wellness, aesthetics',
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',

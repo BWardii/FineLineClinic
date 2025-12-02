@@ -12,10 +12,10 @@ const BeforeAfter = () => {
 
   const beforeAfterImages = [
     {
-      treatment: 'Botox & Dermal Fillers',
+      treatment: 'Anti-Wrinkle Injections & Dermal Fillers',
       before: 'https://images.unsplash.com/photo-1594824804732-ca8db7d1457c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
       after: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-      description: 'Natural enhancement with Botox and subtle filler placement'
+      description: 'Natural enhancement with line-softening injectables and subtle filler placement'
     },
     {
       treatment: 'Lip Enhancement',

@@ -9,45 +9,47 @@ import BotoxHero from '@/components/botox-landing/hero'
 import BotoxPricing from '@/components/botox-landing/pricing'
 import BotoxTrust from '@/components/botox-landing/trust'
 import BotoxQuickBook from '@/components/botox-landing/quick-book'
+import Reviews from '@/components/botox-landing/reviews'
+import Process from '@/components/botox-landing/process'
+import MobileStickyCTA from '@/components/botox-landing/mobile-sticky-cta'
 
 export const metadata: Metadata = {
-	title: 'Botox London | Anti‑Wrinkle Injections by GMC Doctors | 3‑for‑2',
+	title: 'Anti-Wrinkle Injections London | Line Softening by GMC Doctors',
 	description:
-		'Botox (anti‑wrinkle) in London by GMC‑registered doctors. Same‑day appointments. Transparent pricing from £129 per area. 3‑for‑2 new client offer. Book online in seconds.',
+		'Doctor-led anti-wrinkle injections in London using premium neuromodulators such as Botox® for precise line softening. Same-day appointments, transparent pricing from £129 per area, and a 3-for-2 offer for new clients.',
 	keywords: [
-		'Botox London',
-		'anti‑wrinkle injections London',
-		'anti‑aging injectables London',
-		'Botulinum toxin London',
+		'anti-wrinkle injections London',
+		'line softening London',
+		'anti-aging injectables London',
 		'wrinkle treatment London',
 		'forehead lines',
 		'crow’s feet',
 		'frown lines',
 		'GMC doctor',
-		'same‑day appointments',
+		'same-day appointments',
 	],
 	alternates: { canonical: '/anti-wrinkle-injections' },
 	openGraph: {
-		title: 'Botox London | Anti‑Wrinkle Injections by GMC Doctors | 3‑for‑2',
+		title: 'Anti-Wrinkle Injections London | GMC Doctors | 3-for-2 Offer',
 		description:
-			'Botox (anti‑wrinkle) in London by GMC‑registered doctors. From £129 per area. Same‑day appointments. 3‑for‑2 new client offer. Book online in seconds.',
+			'Doctor-led anti-wrinkle injections in London with premium neuromodulators for natural, line-softening results. Same-day appointments from £129 per area.',
 		url: '/anti-wrinkle-injections',
 	},
 	robots: { index: true, follow: true },
 }
 
-export default function BotoxLandingPage() {
+export default function AntiWrinkleLandingPage() {
   return (
     <main className="min-h-screen bg-white">
       <Header />
       <EasyWeekWidgetLoader />
       {/* Structured data for Service and FAQ to improve ad relevance and QS */}
-      <Script id="botox-service-schema" type="application/ld+json">
+      <Script id="anti-wrinkle-service-schema" type="application/ld+json">
         {JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'Service',
-          name: 'Botox (Anti‑Wrinkle Injections)',
-          alternateName: 'Anti‑Wrinkle Injectables',
+          name: 'Anti‑Wrinkle Injections',
+          alternateName: 'Line Softening Treatments',
           serviceType: 'Cosmetic procedure',
           areaServed: { '@type': 'City', name: 'London' },
           provider: {
@@ -67,14 +69,14 @@ export default function BotoxLandingPage() {
           },
         })}
       </Script>
-      <Script id="botox-faq-schema" type="application/ld+json">
+      <Script id="anti-wrinkle-faq-schema" type="application/ld+json">
         {JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'FAQPage',
           mainEntity: [
             {
               '@type': 'Question',
-              name: 'How much does Botox cost in London?',
+              name: 'How much do anti-wrinkle injections cost in London?',
               acceptedAnswer: {
                 '@type': 'Answer',
                 text: 'Treatments start from £129 per area. Our 3‑for‑2 offer is £189 for three areas for new clients.',
@@ -131,35 +133,69 @@ export default function BotoxLandingPage() {
         <textarea name="note" />
       </form>
       <BotoxHero />
-      {/* Before & After highlight (unique image) */}
-      <section className="py-10 px-5 bg-white" id="results">
-        <div className="mx-auto max-w-5xl">
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-1 ring-gray-900/10">
-            <Image
-              src="/images/botox_11-1024x512.jpg"
-              alt="Botox results — before and after"
-              width={1024}
-              height={512}
-              sizes="(min-width: 768px) 60vw, 100vw"
-              className="w-full h-auto object-cover"
-              priority={false}
-            />
-            <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent flex items-center justify-between">
-              <span className="text-white text-sm md:text-base font-semibold">Real Patient Results</span>
-              <a href="#book" className="hidden sm:inline-flex items-center justify-center rounded-full bg-[#EAB308] text-[#221a16] px-5 py-2 text-sm font-semibold shadow-md hover:brightness-110">Book Now</a>
+      <BotoxPricing />
+      <Reviews />
+      {/* Clinician bio / injector section */}
+      <section className="py-14 px-5 bg-white" id="clinician">
+        <div className="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div className="lg:col-span-5 order-2 lg:order-1">
+            <h2 className="text-2xl md:text-4xl font-bold text-gray-900">Meet Your Injector</h2>
+            <h3 className="mt-2 text-xl font-semibold text-sage-600">Dr. Salad</h3>
+            <p className="mt-3 text-gray-600 text-sm md:text-base">
+              Dr. Salad is a highly qualified medical doctor with a Master’s degree in Dermatology and years of experience in advanced skin and aesthetic procedures.
+            </p>
+            <p className="mt-4 text-gray-600 text-sm md:text-base">
+              Having performed hundreds of successful injectable treatments and minor cosmetic procedures, Dr. Salad combines medical expertise with an artistic eye to deliver natural, balanced results never overdone.
+            </p>
+            <p className="mt-4 text-gray-600 text-sm md:text-base">
+              She has worked with some of the UK’s leading aesthetic clinics, earning a reputation for being skilled, approachable, and genuinely caring. Every treatment is carried out with your safety, comfort, and satisfaction in mind.
+            </p>
+            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="rounded-2xl border p-6">
+                <h3 className="font-semibold text-gray-900">Credentials</h3>
+                <ul className="mt-3 text-sm text-gray-700 space-y-2">
+                  <li>GMC‑Registered Medical Doctor</li>
+                  <li>• Master’s Degree in Dermatology</li>
+                  <li>• Specialist Training in Anti‑Wrinkle & Dermal Filler Injections</li>
+                  <li>• Performed Hundreds of Successful Procedures</li>
+                  <li>• Uses Only Premium, FDA‑Approved Products</li>
+                </ul>
+              </div>
+              <div className="rounded-2xl border p-6">
+                <h3 className="font-semibold text-gray-900">Treatment Approach</h3>
+                <ul className="mt-3 text-sm text-gray-700 space-y-2">
+                  <li>• Assessment‑led, bespoke dosing</li>
+                  <li>• Natural, balanced outcomes</li>
+                  <li>• 2‑week review and aftercare</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="lg:col-span-7 order-1 lg:order-2">
+            <div className="relative flex items-center justify-center p-0">
+              <div className="relative w-full max-w-xl aspect-[4/5]">
+                <Image
+                  src="/images/f5c40a55-8b0a-42ef-9c80-8ab363ee7c72 (1)-fotor-bg-remover-20251103174657.png"
+                  alt="Dr. Salad — Aesthetic doctor"
+                  fill
+                  className="object-contain"
+                  sizes="(min-width: 1024px) 40vw, 90vw"
+                  priority={false}
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <BotoxPricing />
+      <Process />
       <BotoxTrust />
 
-      {/* Botox treatment areas / diagram */}
+      {/* Anti-wrinkle treatment areas / diagram */}
       <section className="py-14 px-5 bg-white" id="treatment-areas">
         <div className="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           <div className="lg:col-span-6">
             <h2 className="text-2xl md:text-4xl font-bold text-gray-900">
-              Where Botox Works Best
+              Where Anti-Wrinkle Injections Work Best
             </h2>
             <p className="mt-3 text-gray-600 text-sm md:text-base">
               Strategic micro‑doses relax overactive muscles while preserving natural expression. The plan is tailored to your features after an in‑clinic assessment.
@@ -192,7 +228,7 @@ export default function BotoxLandingPage() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-1 ring-gray-900/10">
               <Image
                 src="/images/6b29a9df2b3500a9013b0697861044df.jpg"
-                alt="Facial Botox treatment points diagram"
+                alt="Facial anti-wrinkle treatment points diagram"
                 width={1200}
                 height={1500}
                 sizes="(min-width: 1024px) 50vw, 100vw"
@@ -204,66 +240,13 @@ export default function BotoxLandingPage() {
         </div>
       </section>
 
-      {/* Clinician bio / injector section */}
-      <section className="py-14 px-5 bg-white" id="clinician">
-        <div className="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          <div className="lg:col-span-5 order-2 lg:order-1">
-            <h2 className="text-2xl md:text-4xl font-bold text-gray-900">Meet Your Injector</h2>
-            <h3 className="mt-2 text-xl font-semibold text-sage-600">Dr. Salad</h3>
-            <p className="mt-3 text-gray-600 text-sm md:text-base">
-              Dr. Salad  is a highly qualified medical doctor with a Master’s degree in Dermatology and years of experience in advanced skin and aesthetic procedures.
-            </p>
-            <p className="mt-4 text-gray-600 text-sm md:text-base">
-              Having performed hundreds of successful injectable treatments and minor cosmetic procedures, Dr. Salad combines medical expertise with an artistic eye to deliver natural, balanced results never overdone.
-            </p>
-            <p className="mt-4 text-gray-600 text-sm md:text-base">
-              She has worked with some of the UK’s leading aesthetic clinics, earning a reputation for being skilled, approachable, and genuinely caring. Every treatment is carried out with your safety, comfort, and satisfaction in mind.
-            </p>
-            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="rounded-2xl border p-6">
-                <h3 className="font-semibold text-gray-900">Credentials</h3>
-                <ul className="mt-3 text-sm text-gray-700 space-y-2">
-                  <li>GMC‑Registered Medical Doctor</li>
-                  <li>• Master’s Degree in Dermatology</li>
-                  <li>• Specialist Training in Anti‑Wrinkle & Dermal Filler Injections</li>
-                  <li>• Performed Hundreds of Successful Procedures</li>
-                  <li>• Uses Only Premium, FDA‑Approved Products</li>
-                </ul>
-              </div>
-            <div className="rounded-2xl border p-6">
-                <h3 className="font-semibold text-gray-900">Treatment Approach</h3>
-                <ul className="mt-3 text-sm text-gray-700 space-y-2">
-                  <li>• Assessment‑led, bespoke dosing</li>
-                  <li>• Natural, balanced outcomes</li>
-                  <li>• 2‑week review and aftercare</li>
-                </ul>
-              </div>
-            </div>
-            
-          </div>
-          <div className="lg:col-span-7 order-1 lg:order-2">
-            <div className="relative flex items-center justify-center p-0">
-              <div className="relative w-full max-w-xl aspect-[4/5]">
-                <Image
-                  src="/images/f5c40a55-8b0a-42ef-9c80-8ab363ee7c72 (1)-fotor-bg-remover-20251103174657.png"
-                  alt="Dr. Salad — Aesthetic doctor"
-                  fill
-                  className="object-contain"
-                  sizes="(min-width: 1024px) 40vw, 90vw"
-                  priority={false}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       {/* On-page FAQ content to align with ad keywords and schema */}
       <section className="py-16 px-5 bg-white" id="faq">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Botox in London — Frequently Asked Questions</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Anti-Wrinkle Injections in London — Frequently Asked Questions</h2>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700">
             <div className="rounded-2xl border p-6">
-              <h3 className="font-semibold text-gray-900">How much does Botox cost in London?</h3>
+              <h3 className="font-semibold text-gray-900">How much do anti-wrinkle injections cost in London?</h3>
               <p className="mt-2 text-sm">Treatments start from £129 per area. New clients can claim our 3‑for‑2 offer — three areas for £189. See <a className="underline" href="#pricing">pricing</a>.</p>
             </div>
             <div className="rounded-2xl border p-6">
@@ -328,6 +311,7 @@ export default function BotoxLandingPage() {
       {/* Modal lives at the end so it's above in DOM order */}
       <BotoxQuickBook />
       <Footer />
+      <MobileStickyCTA />
     </main>
   )
 }

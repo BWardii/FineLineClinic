@@ -90,7 +90,7 @@ export default function BotoxQuickBook() {
         }),
       })
 
-      router.push(`/thank-you?service=botox&plan=${encodeURIComponent(plan)}`)
+      router.push(`/thank-you?service=anti-wrinkle&plan=${encodeURIComponent(plan)}`)
     } catch {
       // Fallback to inline success state if redirect fails
       setSubmitted(true)

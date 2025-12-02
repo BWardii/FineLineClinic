@@ -88,7 +88,7 @@ const AestheticHero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed"
           >
-            Expert aesthetic treatments including Botox, dermal fillers, microneedling with polynucleotides, 
+            Expert aesthetic treatments including anti-wrinkle injections, dermal fillers, microneedling with polynucleotides, 
             and advanced skin rejuvenation procedures. Achieve natural-looking results with precision and care.
           </motion.p>
 

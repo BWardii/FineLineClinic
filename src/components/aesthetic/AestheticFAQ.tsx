@@ -12,8 +12,8 @@ const AestheticFAQ = () => {
 
   const faqs = [
     {
-      question: 'How long do Botox results last?',
-      answer: 'Botox results typically last 3-4 months. The duration can vary depending on individual factors such as metabolism, muscle strength, and lifestyle. Regular treatments can help maintain optimal results, and some clients find that results last longer with consistent treatment over time.'
+      question: 'How long do anti-wrinkle injection results last?',
+      answer: 'Anti-wrinkle injection results typically last 3-4 months. The duration can vary depending on individual factors such as metabolism, muscle strength, and lifestyle. Regular treatments can help maintain optimal results, and some clients find that results last longer with consistent treatment over time.'
     },
     {
       question: 'Are dermal fillers safe?',
@@ -25,11 +25,11 @@ const AestheticFAQ = () => {
     },
     {
       question: 'How soon will I see results from aesthetic treatments?',
-      answer: 'Results vary by treatment: Botox shows effects in 3-7 days with full results at 2 weeks. Dermal fillers provide immediate volume with final results after swelling subsides (1-2 weeks). Microneedling treatments show gradual improvement over 4-6 weeks as collagen production increases. Polynucleotide and Profhilo treatments show progressive results over 4-8 weeks.'
+      answer: 'Results vary by treatment: anti-wrinkle injections show effects in 3-7 days with full results at 2 weeks. Dermal fillers provide immediate volume with final results after swelling subsides (1-2 weeks). Microneedling treatments show gradual improvement over 4-6 weeks as collagen production increases. Polynucleotide and Profhilo treatments show progressive results over 4-8 weeks.'
     },
     {
       question: 'Is there any downtime after aesthetic treatments?',
-      answer: 'Most aesthetic treatments have minimal downtime. Botox and fillers may cause slight swelling or bruising for 1-3 days. Microneedling treatments may result in mild redness for 24-48 hours. We provide detailed aftercare instructions to minimise any side effects and optimise healing. Most clients return to normal activities immediately or within a day.'
+      answer: 'Most aesthetic treatments have minimal downtime. Anti-wrinkle injections and fillers may cause slight swelling or bruising for 1-3 days. Microneedling treatments may result in mild redness for 24-48 hours. We provide detailed aftercare instructions to minimise any side effects and optimise healing. Most clients return to normal activities immediately or within a day.'
     },
     {
       question: 'How do I know which treatment is right for me?',
@@ -37,7 +37,7 @@ const AestheticFAQ = () => {
     },
     {
       question: 'Can I combine different aesthetic treatments?',
-      answer: 'Yes, many treatments can be combined for enhanced results. Popular combinations include Botox with dermal fillers for comprehensive facial rejuvenation, or microneedling with polynucleotides for optimal skin regeneration. We create customised treatment plans that may include multiple procedures, properly spaced for safety and effectiveness.'
+      answer: 'Yes, many treatments can be combined for enhanced results. Popular combinations include anti-wrinkle injections with dermal fillers for comprehensive facial rejuvenation, or microneedling with polynucleotides for optimal skin regeneration. We create customised treatment plans that may include multiple procedures, properly spaced for safety and effectiveness.'
     },
     {
       question: 'What should I do to prepare for my treatment?',
@@ -45,11 +45,11 @@ const AestheticFAQ = () => {
     },
     {
       question: 'Are aesthetic treatments painful?',
-      answer: 'Most treatments involve minimal discomfort. We use fine needles and topical anaesthetics when appropriate. Botox injections feel like small pinpricks, dermal fillers may cause slight pressure, and microneedling treatments use numbing cream for comfort. Our practitioners are skilled in techniques to minimise discomfort while ensuring effective treatment delivery.'
+      answer: 'Most treatments involve minimal discomfort. We use fine needles and topical anaesthetics when appropriate. Anti-wrinkle injections feel like small pinpricks, dermal fillers may cause slight pressure, and microneedling treatments use numbing cream for comfort. Our practitioners are skilled in techniques to minimise discomfort while ensuring effective treatment delivery.'
     },
     {
       question: 'How much do aesthetic treatments cost?',
-      answer: 'Costs vary depending on the treatment type, area treated, and amount of product required. Botox starts from £135, dermal fillers from £250, and microneedling treatments from £150. We provide detailed pricing during your consultation and offer package deals for multiple treatments.'
+      answer: 'Costs vary depending on the treatment type, area treated, and amount of product required. Anti-wrinkle injections start from £135, dermal fillers from £250, and microneedling treatments from £150. We provide detailed pricing during your consultation and offer package deals for multiple treatments.'
     }
   ]
 

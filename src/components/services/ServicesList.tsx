@@ -85,9 +85,9 @@ const ServicesList = () => {
       category: 'aesthetic'
     },
     {
-      name: 'Botox Treatment',
+      name: 'Anti-Wrinkle Injections',
       price: 'from £135',
-      description: 'FDA-approved botulinum toxin to reduce dynamic wrinkles and fine lines',
+      description: 'Doctor-led neuromodulator treatments to soften dynamic wrinkles and fine lines',
       benefits: ['Wrinkle reduction', 'Preventative aging', 'Quick procedure'],
       duration: '15-30 minutes',
       icon: Sparkles,

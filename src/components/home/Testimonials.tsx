@@ -16,7 +16,7 @@ const Testimonials = () => {
       location: 'London',
       rating: 5,
       text: 'Dr. Ayaan and her team are absolutely amazing! The results look so natural, and I feel more confident than ever. The whole experience was comfortable and professional.',
-      treatment: 'Botox & Dermal Fillers',
+      treatment: 'Anti-Wrinkle Injections & Dermal Fillers',
       image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&q=80',
     },
     {

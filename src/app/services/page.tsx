@@ -7,7 +7,7 @@ import FAQ from '@/components/services/FAQ'
 
 export const metadata = {
   title: 'Services - FineLine Clinic',
-  description: 'Comprehensive aesthetic treatments including Botox, dermal fillers, skin treatments, and more. Professional, safe, and effective procedures.',
+  description: 'Comprehensive aesthetic treatments including anti-wrinkle injections, dermal fillers, skin treatments, and more. Professional, safe, and effective procedures.',
 }
 
 export default function ServicesPage() {

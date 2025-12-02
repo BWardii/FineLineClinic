@@ -18,7 +18,7 @@ const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false)
 
   const services = [
-    'Botox & Anti-Wrinkle',
+    'Anti-Wrinkle Injections',
     'Dermal Fillers',
     'Lip Fillers',
     'Vitamin Infusions',

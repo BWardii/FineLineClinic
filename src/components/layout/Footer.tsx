@@ -9,7 +9,7 @@ const Footer = () => {
 
   const footerLinks = {
     services: [
-      { name: 'Botox & Anti-Wrinkle', href: '/anti-wrinkle-injections' },
+      { name: 'Anti-Wrinkle Injections', href: '/anti-wrinkle-injections' },
       { name: 'Dermal Fillers', href: '/services/fillers' },
       { name: 'Vitamin Infusions', href: '/vitamin-infusions' },
       { name: 'Skin Treatments', href: '/services/skin-treatments' },

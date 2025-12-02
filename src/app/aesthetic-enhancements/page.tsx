@@ -7,7 +7,7 @@ import AestheticFAQ from '@/components/aesthetic/AestheticFAQ'
 
 export const metadata = {
   title: 'Aesthetic Enhancements - FineLine Clinic',
-  description: 'Professional aesthetic treatments including Botox, dermal fillers, microneedling with polynucleotides, and advanced skin rejuvenation procedures.',
+  description: 'Professional aesthetic treatments including anti-wrinkle injections, dermal fillers, microneedling with polynucleotides, and advanced skin rejuvenation procedures.',
 }
 
 export default function AestheticEnhancementsPage() {

@@ -23,9 +23,9 @@ const Services = () => {
     },
     {
       icon: Syringe,
-      title: 'Anti-Aging Injectables',
-      description: 'Expert Botox and dermal filler treatments to smooth wrinkles and restore youthful volume.',
-      features: ['Botox Treatments', 'Dermal Fillers', 'Lip Enhancement', 'Facial Contouring'],
+      title: 'Anti-Wrinkle Injectables',
+      description: 'Expert line-softening and dermal filler treatments to smooth wrinkles and restore youthful volume.',
+      features: ['Anti-Wrinkle Injections', 'Dermal Fillers', 'Lip Enhancement', 'Facial Contouring'],
       price: 'From £135',
       image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=500&q=80',
       href: '/anti-wrinkle-injections',

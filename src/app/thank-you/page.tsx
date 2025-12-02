@@ -16,7 +16,7 @@ export default function ThankYouPage() {
         <p className="text-gray-600 mt-3">We’ll contact you shortly to confirm your appointment. No payment was taken online.</p>
         <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
           <Link href="/" className="inline-flex rounded-full bg-gray-900 text-white px-6 py-3 font-semibold">Back to home</Link>
-          <Link href="/anti-wrinkle-injections" className="inline-flex rounded-full border border-gray-300 px-6 py-3 font-semibold text-gray-800">View Botox offers</Link>
+          <Link href="/anti-wrinkle-injections" className="inline-flex rounded-full border border-gray-300 px-6 py-3 font-semibold text-gray-800">View Anti-Wrinkle options</Link>
         </div>
       </div>
     </main>

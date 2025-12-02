@@ -81,7 +81,7 @@ const DoctorProfile = () => {
 
             <p className="text-gray-600 mb-8 leading-relaxed">
               Dr. Ayaan's expertise spans advanced injectables, dermal fillers, and innovative vitamin 
-              infusion therapies. She is particularly renowned for her precision with Botox treatments 
+              infusion therapies. She is particularly renowned for her precision with anti-wrinkle injections 
               and her ability to create subtle, age-defying results that maintain facial expression and 
               character. Her patients appreciate her meticulous attention to detail and her commitment 
               to the highest standards of safety and care.

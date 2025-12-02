@@ -76,7 +76,7 @@ const BookingForm = () => {
       color: 'from-sage-500 to-sage-600'
     },
     { 
-      name: 'Botox Treatment', 
+      name: 'Anti-Wrinkle Injections', 
       price: 'from £135', 
       category: 'Aesthetic Enhancements',
       icon: Sparkles,
