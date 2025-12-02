@@ -294,16 +294,23 @@ export default function AntiWrinkleLandingPage() {
         </div>
       </section>
 
-      {/* Last chance banner */}
+      {/* Holiday last chance banner */}
       <section className="px-5 pb-16">
         <div className="mx-auto max-w-6xl">
-          <div className="rounded-3xl bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-            <div>
-              <h3 className="text-2xl md:text-3xl font-bold">New to FineLine? Get 3 Areas for the Price of 2</h3>
-              <p className="text-white/80 mt-2">Offer ends this week. Book your doctor‑led consultation today.</p>
+          <div className="rounded-3xl bg-gradient-to-br from-[#0f1a24] via-[#1a3045] to-[#142536] text-white p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative overflow-hidden">
+            {/* Decorative snowflakes */}
+            <div className="absolute top-4 left-6 text-white/20 text-4xl">❄</div>
+            <div className="absolute bottom-4 right-8 text-white/20 text-3xl">❄</div>
+            <div className="absolute top-1/2 right-1/4 text-white/10 text-2xl">❄</div>
+            <div className="relative z-10">
+              <div className="inline-flex items-center gap-2 bg-red-600/20 border border-red-400/30 px-3 py-1 rounded-full mb-3 text-sm font-semibold text-red-300">
+                🎄 Holiday Special
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold">Glow Into the New Year — 3 Areas for the Price of 2</h3>
+              <p className="text-white/80 mt-2">Limited festive offer ends 31st December. Book your doctor‑led consultation today.</p>
             </div>
-            <OpenWidgetButton className="inline-flex items-center justify-center rounded-full bg-[#EAB308] text-[#221a16] px-8 py-4 font-semibold shadow-xl hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#EAB308] transition" ariaLabel="Open booking widget">
-              Claim Offer Now
+            <OpenWidgetButton className="relative z-10 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 font-semibold shadow-xl hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition" ariaLabel="Claim holiday offer">
+              🎁 Claim Holiday Offer
             </OpenWidgetButton>
           </div>
         </div>
