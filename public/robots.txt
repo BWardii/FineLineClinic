@@ -1,0 +1,19 @@
+# Robots.txt for FineLine Clinic
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://finelineclinic.com/sitemap.xml
+
+# Disallow admin areas
+Disallow: /api/
+
+# Allow crawling of all pages
+Allow: /about
+Allow: /services
+Allow: /booking
+Allow: /contact
+Allow: /aesthetic-enhancements
+Allow: /anti-wrinkle-injections
+Allow: /vitamin-infusions
+
